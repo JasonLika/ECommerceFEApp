@@ -1,0 +1,44 @@
+@page "/createtickets"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject TicketService TicketService;
+@inject CartService CartService;
+@inject NavigationManager Navigation;
+
+<EditForm Model="newTicket" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+ 
+<div class="form-group">
+<label>Title:</label>
+<InputText class="form-control" @bind-Value="newTicket.Title" />
+</div>
+<div class="form-group">
+<label>Description:</label>
+<InputText class="form-control" @bind-Value="newTicket.Description" />
+</div>
+<button type="submit" class="btn btn-success">Create</button>
+</EditForm>
+
+@code
+{
+    private Ticket newTicket = new();
+    private UserProfile user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await CartService.GetCurrentUserProfileAsync();
+        var userId = user.Id;
+    }
+
+
+    private async Task HandleValidSubmit()
+    {
+        newTicket.UserId = user.Id;
+        await TicketService.CreateTicketAsync(newTicket);
+        Navigation.NavigateTo("/ticketsuccess");
+        // Wait for 5 seconds (5000 milliseconds)
+        await Task.Delay(5000);
+        Navigation.NavigateTo("/tickets");
+    }
+}

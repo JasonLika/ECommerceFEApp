@@ -1,0 +1,23 @@
+@page "/login"
+@inject NavigationManager NavManager
+
+<div class="container" style="position: absolute; top: 90px; left: 280px;">
+    <div class="card shadow" style="width: 350px;">
+        <div class="card-body">
+            <h3 class="card-title mb-4">Login with GitHub</h3>
+            <p class="card-text mb-4">
+                Access your account quickly and securely using your GitHub credentials.
+            </p>
+            <button class="btn btn-primary btn-lg w-100" @onclick="LoginWithGitHub">Sign In</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void LoginWithGitHub()
+    {
+        NavManager.NavigateTo("https://localhost:7117/auth/login", forceLoad: true);
+    }
+}
+
+

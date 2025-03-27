@@ -1,0 +1,66 @@
+@page "/wishlists"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject WishlistService WishlistService
+@inject NavigationManager Navigation;
+
+<div style="max-width: 1200px; margin: 40px auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    <h3 style="color: #343a40; font-size: 2rem; margin-bottom: 30px; text-align: center;">Your Wishlist</h3>
+    
+    <table class="table table-striped table-hover" style="background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+        <thead class="thead-dark">
+            <tr>
+                <th style="text-align: center;">Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var wishlist in WishlistList)
+            {
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    @if (!string.IsNullOrEmpty(wishlist.ImageUrl))
+                    {
+                        <img src="@wishlist.ImageUrl" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;" alt="Thumbnail" />
+                    }
+                    else
+                    {
+                        <span style="color: gray; font-style: italic;">No Image</span>
+                    }
+                </td>
+                <td style="vertical-align: middle;">@wishlist.Name</td>
+                <td style="vertical-align: middle;">£@wishlist.Price</td>
+                <td style="vertical-align: middle;">
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteWishlistItem(wishlist.Id)">Delete</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+@code {
+    private List<Wishlist> WishlistList = new();
+
+    private UserProfile user;
+ 
+    protected override async Task OnInitializedAsync()
+    {
+        var allWishlists = await WishlistService.GetWishlistsAsync();
+        user = await WishlistService.GetCurrentUserProfileAsync();
+        var userId = user.Id;
+        WishlistList = allWishlists.Where(wishlist => wishlist.UserId == userId).ToList();
+    }
+
+     private async Task DeleteWishlistItem(int id) {
+        await WishlistService.DeleteWishlistItemAsync(id);
+        //WishlistList = await WishlistService.GetWishlistsAsync();
+
+        var allWishlists = await WishlistService.GetWishlistsAsync();
+        user = await WishlistService.GetCurrentUserProfileAsync();
+        var userId = user.Id;
+        WishlistList = allWishlists.Where(wishlist => wishlist.UserId == userId).ToList();
+    }
+}

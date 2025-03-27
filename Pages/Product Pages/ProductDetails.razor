@@ -1,0 +1,166 @@
+@page "/product-details/{id:int}"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject ProductService ProductService
+@inject CartService CartService
+@inject WishlistService WishlistService
+@inject NavigationManager Navigation;
+
+@if (product == null) {
+    <p>Loading...</p>
+}
+else {
+<div style="max-width: 1200px; margin: 40px auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    <!-- Product Section -->
+    <div style="display: flex; gap: 30px; align-items: stretch; flex-wrap: wrap;">
+        <!-- Product Image -->
+        <div style="flex: 1; max-width: 40%; text-align: center; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+            @if (!string.IsNullOrEmpty(product.ImageUrl))
+            {
+                <img src="@product.ImageUrl" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            }
+            else
+            {
+                <p style="color: gray; font-style: italic;">No image available</p>
+            }
+        </div>
+
+        <!-- Product Details -->
+        <div style="flex: 2; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h1 style="margin-bottom: 20px; color: #343a40; font-size: 2rem;">@product.Name</h1>
+            <p style="margin-bottom: 15px; font-size: 1.1rem; color: #555;">
+                <strong>Description:</strong> @product.Description
+            </p>
+            <p style="margin-bottom: 15px; font-size: 1.1rem; color: #555;">
+                <strong>Price:</strong> $@product.Price
+            </p>
+            <p style="margin-bottom: 15px; font-size: 1.1rem; color: #555;">
+                <strong>Stock Status:</strong> @((product.Stock > 0) ? "In Stock" : "Out of Stock")
+            </p>
+            <div style="display: flex; gap: 15px; margin-top: 30px;">
+                <button class="btn btn-secondary" @onclick="ContinueShopping" style="flex: 1;">Continue Shopping</button>
+                <button class="btn btn-primary" @onclick="AddToCart" style="flex: 1;">Add To Cart</button>
+                <button class="btn btn-warning" @onclick="AddToWishlist" style="flex: 1;">Add to Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div style="margin-top: 40px; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="margin-bottom: 20px; font-size: 1.8rem; color: #343a40;">Customer Reviews</h2>
+        <button class="btn btn-primary mb-3" @onclick="GoToCreateReview" style="padding: 6px 12px; border-radius: 5px;">Create Review</button>
+
+        @if (product.Reviews?.Any() == true)
+        {
+            <ul style="list-style-type: none; padding: 0;">
+                @foreach (var review in product.Reviews)
+                {
+                    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #e9ecef; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <h4 style="margin-bottom: 10px; color: #343a40;">@review.Title</h4>
+                        <p style="margin-bottom: 5px; font-size: 1.1rem; color: #555;">@review.Description</p>
+                        <p style="margin-bottom: 0; font-style: italic; color: #007bff;"><strong>Rating:</strong> @review.Rating/5</p>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p style="color: gray; font-style: italic;">No reviews available for this product.</p>
+        }
+    </div>
+</div>
+
+
+
+}
+
+@code{
+    private Product product;
+    [Parameter] public int Id {get; set;}
+
+    private UserProfile user;
+
+    protected override async Task OnInitializedAsync() {
+        
+        product = await ProductService.GetProductByIdAsync(Id);
+
+        user = await CartService.GetCurrentUserProfileAsync();
+    }
+
+    private void GoToCreateReview() {
+        Navigation.NavigateTo($"/createreviews/{product.Id}");
+    }
+
+    private void ContinueShopping() {
+         Navigation.NavigateTo("/products");
+    }
+
+    private async Task AddToCart()
+    {
+        var cartItem = new Cart
+        {
+            ProductId = product.Id,
+            Quantity = 1,
+            Name = product.Name,
+            Price = product.Price,
+            Stock = product.Stock,
+            Size = product.Size,
+            ImageUrl = product.ImageUrl,
+            UserId = user.Id
+        };
+
+        await CartService.AddToCartAsync(cartItem);
+        Navigation.NavigateTo("/carts");
+    }
+    
+    private async Task AddToWishlist()
+    {
+        var wishlistItem = new Wishlist
+        {
+            ProductId = product.Id,
+            Name = product.Name,
+            Price = product.Price,
+            Stock = product.Stock,
+            Size = product.Size,
+            ImageUrl = product.ImageUrl,
+            UserId = user.Id
+        };
+
+        await WishlistService.AddToWishlistAsync(wishlistItem);
+        Navigation.NavigateTo("/wishlists");    
+        }
+    
+
+    /* 
+    // to add exiting product to cart increments quantity
+
+    private async Task AddToCartt()
+{
+    // Check if the product already exists in the cart
+    var existingCartItem = await ProductService.GetCartItemByProductIdAsync(product.Id);
+
+    if (existingCartItem != null)
+    {
+        // If the product exists, increase its quantity by 1
+        existingCartItem.Quantity += 1;
+        await ProductService.UpdateCartItemAsync(existingCartItem);
+        // Navigate to the cart page after updating or adding the product    
+        }
+    else
+    {
+        var cartItem = new Cart
+        {
+            ProductId = product.Id,
+            Quantity = 1,
+            Name = product.Name,
+            Price = product.Price,
+            Stock = product.Stock,
+            Size = product.Size
+        };
+
+        await ProductService.AddToCartAsync(cartItem);
+    }
+    Navigation.NavigateTo("/carts");    
+    }
+*/
+}

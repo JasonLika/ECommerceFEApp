@@ -1,0 +1,86 @@
+@page "/admin/createproducts"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject ProductService ProductService;
+@inject NavigationManager Navigation;
+@using ECommerceFEApp.AuthServices;
+@inject HttpClient Http;
+@inject AuthService AuthService;
+
+<EditForm Model="newProduct" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+ 
+<div class="form-group">
+<label>Name:</label>
+<InputText class="form-control" @bind-Value="newProduct.Name" />
+</div>
+<div class="form-group">
+<label>Description:</label>
+<InputText class="form-control" @bind-Value="newProduct.Description" />
+</div>
+<div class="form-group">
+<label>Price:</label>
+<InputNumber class="form-control" @bind-Value="newProduct.Price" />
+</div>
+<div class="form-group">
+<label>Stock:</label>
+<InputNumber class="form-control" @bind-Value="newProduct.Stock" />
+</div>
+<div class="form-group">
+<label>Size:</label>
+<InputText class="form-control" @bind-Value="newProduct.Size" />
+</div>
+<!-- uploading images  -->
+<div class="form-group">
+<label>Image:</label>
+<InputFile OnChange="HandleFileSelected" />
+</div>
+<button type="submit" class="btn btn-success">Create</button>
+</EditForm>
+
+@code
+{
+    private Product newProduct = new();
+
+    private IBrowserFile? selectedFile;
+
+    private async Task HandleFileSelected(InputFileChangeEventArgs e) {
+        selectedFile = e.File;
+    }
+
+    /* original code
+    private async Task HandleValidSubmit() {
+        await ProductService.CreateProductAsync(newProduct);
+        Navigation.NavigateTo("/products");
+    }
+    */
+
+    /* can delete this now since it works below this method
+    private async Task HandleValidSubmit()
+    {
+        await ProductService.CreateProductAsync(newProduct);
+        // After creating the product, if an image was selected, upload it.
+        if (selectedFile != null)
+        {
+            await ProductService.UploadProductImageAsync(newProduct.Id, selectedFile);
+        }
+        Navigation.NavigateTo("/products");
+    }
+    */
+
+    private async Task HandleValidSubmit()
+    {
+    // Update newProduct with the returned product (which has its new Id)
+    newProduct = await ProductService.CreateProductIdAsync(newProduct);
+    
+    // After creating product, if an image was selected then upload it
+    if (selectedFile != null)
+    {
+        await ProductService.UploadProductImageAsync(newProduct.Id, selectedFile);
+    }
+
+    Navigation.NavigateTo("/products");
+    }
+
+    }

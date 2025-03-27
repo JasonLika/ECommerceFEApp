@@ -1,0 +1,36 @@
+<h3>Cart</h3>
+ 
+<table class="table">
+<thead>
+<tr>
+<th>Image</th>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+    @foreach (var cart in CartList)
+    {
+<tr>
+<td>
+    @if (!string.IsNullOrEmpty(cart.ImageUrl))
+    {
+        <img src="@cart.ImageUrl" style="width:50px;" alt="Thumbnail" />
+    }
+</td>
+<td>@cart.Name</td>
+<td>@cart.Price</td>
+<td>
+<div style="display: flex; gap: 8px; align-items: center;">
+    <input type="number" min="1" class="form-control" style="width: 80px;" 
+        @bind="cart.Quantity" />
+    <button class="btn btn-primary" @onclick="() => UpdateCartItem(cart)">Update</button>
+</div>
+</td>
+<td><button class="btn btn-danger" @onclick="() => DeleteCartItem(cart.Id)">Delete</button>
+</td>
+</tr>
+    }
+</tbody>
+</table>

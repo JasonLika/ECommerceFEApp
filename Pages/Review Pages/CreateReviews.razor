@@ -1,0 +1,43 @@
+@page "/createreviews/{id:int}"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject ReviewService ReviewService;
+@inject NavigationManager Navigation;
+
+<EditForm Model="newReview" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+ 
+<div class="form-group">
+<label>Title:</label>
+<InputText class="form-control" @bind-Value="newReview.Title" />
+</div>
+<div class="form-group">
+<label>Description:</label>
+<InputText class="form-control" @bind-Value="newReview.Description" />
+</div>
+<div class="form-group">
+<label>Rating:</label>
+<InputNumber class="form-control" @bind-Value="newReview.Rating" />
+</div>
+<button type="submit" class="btn btn-success">Create</button>
+</EditForm>
+
+@code
+{
+    private Review newReview = new();
+
+    [Parameter] public int Id {get; set;}
+
+    protected override async Task OnInitializedAsync()
+    {
+        newReview.ProductId = Id;
+    }
+
+    private async Task HandleValidSubmit() {
+        await ReviewService.CreateReviewAsync(newReview);
+        Navigation.NavigateTo($"/product-details/{Id}");
+    }
+
+
+}

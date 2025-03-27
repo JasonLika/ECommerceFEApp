@@ -1,0 +1,122 @@
+@page "/productslistcard"
+@using ECommerceFEApp.Services; 
+@using ECommerceFEApp.Models;
+@inject ProductService ProductService
+@inject NavigationManager Navigation;
+@using Microsoft.AspNetCore.Components.QuickGrid;
+
+
+<div class="card mb-3">
+    <div class="card-header d-flex flex-row">
+        <h5 class="flex-fill">Products</h5>
+ <div class="d-flex flex-row">
+    <input @bind="NameFilter" class="form-control form-control-sm" 
+           placeholder="Search name..." 
+           style="width: 400px; margin-right: 4px;" />
+    <button @onclick="ApplyFilters" class="btn btn-primary btn-sm ms-1" style="margin-right: 30px;">Search</button>
+    <button @onclick="ClearFilters" class="btn btn-secondary btn-sm ms-2" style="margin-right: 20px;">Clear Filters</button>
+
+</div>
+        <div class="px-1">
+            <select class="form-select form-select-sm" @onchange="OnPageSizeChanged">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body pb-2 px-0 mb-0">
+        <QuickGrid Class="table table-striped m-0"
+                   Items="@FilteredProducts.AsQueryable()"
+                   ItemKey="@(product => product.Id)"
+                   Pagination="paginationState">
+            <PropertyColumn Title="ID"
+                            Property="@(product => product.Id)"
+                            Class="align-middle" />
+            <PropertyColumn Title="Name"
+                            Property="@(product => product.Name)"
+                            Class="align-middle" />
+            <PropertyColumn Title="Price £"
+                            Property="@(product => product.Price)"
+                            Sortable="true"
+                            Class="align-middle">
+                <ColumnOptions>
+                    <div class="d-flex flex-row">
+                        <input @bind="PriceFilter" class="form-control form-control-sm" placeholder="Filter Price" />
+                        <button @onclick="ApplyFilters" class="btn btn-primary btn-sm ms-1">Filter</button>
+                    </div>
+                </ColumnOptions>
+            </PropertyColumn>
+            <PropertyColumn Title="Stock"
+                            Property="@(product => product.Stock)"
+                            Sortable="true"
+                            Class="align-middle">
+                <ColumnOptions>
+                    <div class="d-flex flex-row">
+                        <input @bind="StockFilter" class="form-control form-control-sm" placeholder="Filter Stock" />
+                        <button @onclick="ApplyFilters" class="btn btn-primary btn-sm ms-1">Filter</button>
+                    </div>
+                </ColumnOptions>
+            </PropertyColumn>
+        </QuickGrid>
+    </div>
+    <div class="card-footer">
+        <Paginator State="paginationState" />
+    </div>
+</div>
+
+
+@code {
+
+private string SearchQuery { get; set; } = string.Empty;
+
+    private List<Product> ProductList = new();
+    private List<Product> FilteredProducts = new();
+    private string PriceFilter = string.Empty;
+    private string StockFilter = string.Empty;
+
+    ////////
+    private string NameFilter { get; set; } = string.Empty;
+
+    private void ClearFilters() {
+    NameFilter = string.Empty;
+    PriceFilter = string.Empty;
+    StockFilter = string.Empty;
+
+    FilteredProducts = ProductList;
+    StateHasChanged(); // Trigger UI refresh to reflect changes
+    }
+
+    ////////
+
+    private PaginationState paginationState = new PaginationState { ItemsPerPage = 5 };
+
+    
+    protected override async Task OnInitializedAsync() {
+        ProductList = await ProductService.GetProductsAsync();
+        FilteredProducts = ProductList;
+    }
+    /*
+    private void ApplyFilters() {
+        FilteredProducts = ProductList.Where(product => 
+        (string.IsNullOrEmpty(PriceFilter) || product.Price.ToString().Contains(PriceFilter)) &&
+        (string.IsNullOrEmpty(StockFilter) || product.Stock.ToString().Contains(StockFilter))        
+        ).ToList();
+    }
+    */
+    private void ApplyFilters() {
+        FilteredProducts = ProductList.Where(product => 
+        (string.IsNullOrEmpty(NameFilter) || product.Name.Contains(NameFilter, StringComparison.OrdinalIgnoreCase)) &&
+        (string.IsNullOrEmpty(PriceFilter) || product.Price.ToString().Contains(PriceFilter)) &&
+        (string.IsNullOrEmpty(StockFilter) || product.Stock.ToString().Contains(StockFilter))        
+    ).ToList();
+}
+
+
+    private void OnPageSizeChanged(ChangeEventArgs e) {
+        int newPageSize = int.Parse(e.Value.ToString());
+        paginationState = new PaginationState { ItemsPerPage = newPageSize };
+    }
+}
