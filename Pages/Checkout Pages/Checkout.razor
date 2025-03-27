@@ -1,9 +1,11 @@
 @page "/checkout"
 @using ECommerceFEApp.AuthServices
+@using ECommerceFEApp.Services; 
 @inject HttpClient Http
 @inject AuthService AuthService
 @inject NavigationManager NavManager
 @using ECommerceFEApp.Models
+@inject PayPalService PayPalService
 
 <h3>Checkout</h3>
 
@@ -94,7 +96,7 @@ else
     private async Task CreatePayPalOrder()
     {
         // calls e.g. /api/paypal/create-order
-        var response = await Http.PostAsync("api/paypal/create-order", null);
+        var response = await PayPalService.CreatePayPalOrderAsync();
         if (response.IsSuccessStatusCode)
         {
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();

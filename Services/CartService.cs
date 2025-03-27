@@ -44,6 +44,5 @@ public class CartService
     // Call the API endpoint to retrieve the current user's profile
     return await _httpClient.GetFromJsonAsync<UserProfile>("api/userprofiles/me");
     }
-    
 }
 }

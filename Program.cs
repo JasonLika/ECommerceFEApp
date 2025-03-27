@@ -17,6 +17,7 @@ builder.Services.AddScoped<CartService>();
 builder.Services.AddScoped<ReviewService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<WishlistService>();
+builder.Services.AddScoped<PayPalService>();
 
 
 await builder.Build().RunAsync();
