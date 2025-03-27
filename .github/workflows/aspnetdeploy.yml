@@ -1,39 +1,39 @@
-name: Deploy ASP.NET Core Web API to Azure App Service
+name: Deploy Blazor WebAssembly App
 
 on:
-  workflow_dispatch: # Allows the workflow to be triggered manually
+  workflow_dispatch: # Manual trigger
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Check out the repository code
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Setup .NET 9.0 SDK
+      # Set up .NET 9.0 SDK
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '9.0.x'
-
-      # Restore dependencies
+      
+      # Restore NuGet packages
       - name: Restore Dependencies
         run: dotnet restore
 
-      # Build the project in Release configuration
-      - name: Build
+      # Build the solution in Release configuration
+      - name: Build Solution
         run: dotnet build --configuration Release --no-restore
 
-      # Publish the project to a local folder
-      - name: Publish
+      # Publish the app to a local folder
+      - name: Publish Application
         run: dotnet publish --configuration Release --output ./publish --no-build
 
-      # Deploy the published output to Azure App Service
+      # Deploy to Azure App Service using the publish profile stored in repository secrets
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: JasonLikaAPIWebApp
+          app-name: JasonLikaFEWebApp
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./publish
