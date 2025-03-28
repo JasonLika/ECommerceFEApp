@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ECommerceFEApp",
   "resources": {
-    "hash": "sha256-rAODNsfVCj1uyq+gYsL+a1CsOggbQMe3rjvYWE0iSZY=",
+    "hash": "sha256-fmllbCG26pfD5LpKpvYEnuILTPSYb76EZgkExLx+DeQ=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.esv38zo127.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.cwj0bpb71v.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -202,8 +202,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "ECommerceFEApp.4zbajaqsl8.wasm": "ECommerceFEApp.wasm",
-      "ECommerceFEApp.r8xb9cr99i.pdb": "ECommerceFEApp.pdb"
+      "ECommerceFEApp.w2w04y0ill.wasm": "ECommerceFEApp.wasm",
+      "ECommerceFEApp.tv08xkvv1i.pdb": "ECommerceFEApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -414,10 +414,10 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "ECommerceFEApp.4zbajaqsl8.wasm": "sha256-IFZ0YSdar8gkeKPIG5Vj5NdC/6CLfbG1QHo8BQyI9/A="
+      "ECommerceFEApp.w2w04y0ill.wasm": "sha256-aG7qhf2SUIcZ+OtDTnDOboQWYz/B033IBJaCTorOvF8="
     },
     "pdb": {
-      "ECommerceFEApp.r8xb9cr99i.pdb": "sha256-C8ZWXDqSr9xD7Uz1u4NSLZRoqzNFT1HK34fgieNGsG4="
+      "ECommerceFEApp.tv08xkvv1i.pdb": "sha256-efeNQ4kHOppp05TgD+4AP174fyhoeOE04ObLnsWgcvE="
     }
   },
   "cacheBootResources": true,

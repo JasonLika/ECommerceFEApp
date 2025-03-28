@@ -6,6 +6,13 @@
 
 <h3>Products</h3>
  
+<div class="filters mb-3">
+    <input @bind="NameFilter" class="form-control form-control-sm" placeholder="Search name..." style="width: 300px; display: inline-block; margin-right: 10px;" />
+    <input @bind="PriceFilter" class="form-control form-control-sm" placeholder="Filter by price..." style="width: 300px; display: inline-block; margin-right: 10px;" />
+    <button @onclick="ApplyFilters" class="btn btn-primary btn-sm" style="margin-right: 10px;">Search</button>
+    <button @onclick="ClearFilters" class="btn btn-secondary btn-sm">Clear Filters</button>
+</div>
+
 <table class="table">
 <thead>
 <tr>
@@ -47,6 +54,7 @@
 </table>
 
 @code {
+    /*
     private List<Product> ProductList = new();
  
     protected override async Task OnInitializedAsync()
@@ -66,4 +74,54 @@
         await ProductService.DeleteProductAsync(id);
         ProductList = await ProductService.GetProductsAsync();
     }
+    */
+
+    @code {
+    private List<Product> ProductList = new(); // Original product list
+    private List<Product> FilteredProducts = new(); // Filtered product list
+    
+    private string NameFilter { get; set; } = string.Empty; // Search term for the product name
+    private string PriceFilter { get; set; } = string.Empty; // Filter by price
+
+    protected override async Task OnInitializedAsync()
+    {
+        ProductList = await ProductService.GetProductsAsync(); // Fetch products from the service
+        FilteredProducts = ProductList; // Initialize the filtered list
+    }
+
+    private void ApplyFilters()
+    {
+        // Apply search and price filters
+        FilteredProducts = ProductList.Where(product => 
+            (string.IsNullOrEmpty(NameFilter) || product.Name.Contains(NameFilter, StringComparison.OrdinalIgnoreCase)) &&
+            (string.IsNullOrEmpty(PriceFilter) || product.Price.ToString().Contains(PriceFilter))
+        ).ToList();
+    }
+
+    private void ClearFilters()
+    {
+        // Clear the filters and reset the filtered list
+        NameFilter = string.Empty;
+        PriceFilter = string.Empty;
+        FilteredProducts = ProductList; // Reset to the full product list
+    }
+
+    private void NavigateToReview(int id)
+    {
+        Navigation.NavigateTo($"/reviews/{id}"); // Redirect to reviews page
+    }
+
+    private void NavigateToUpdate(int id)
+    {
+        Navigation.NavigateTo($"/update-product/{id}"); // Redirect to update page
+    }
+
+    private async Task DeleteProduct(int id)
+    {
+        await ProductService.DeleteProductAsync(id); // Delete the product
+        ProductList = await ProductService.GetProductsAsync(); // Refresh the product list
+        FilteredProducts = ProductList; // Reset the filtered list
+    }
+}
+
 }

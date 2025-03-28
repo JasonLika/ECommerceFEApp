@@ -1082,10 +1082,10 @@ C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\De
 C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\77pbawdk7y-qrl1fuqt3c.gz
 C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\et6utv0imj-nib9cvonux.gz
 C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\ECommerceFEApp.sourcelink.json
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.r8xb9cr99i.pdb
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.4zbajaqsl8.wasm
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.r8xb9cr99i.pdb.gz
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.4zbajaqsl8.wasm.gz
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\zqeyuvgud8-4zbajaqsl8.gz
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\4q6z8c2a70-r8xb9cr99i.gz
-C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\0ulxlfgdj5-8cfbpkrdmf.gz
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.tv08xkvv1i.pdb
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.w2w04y0ill.wasm
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.tv08xkvv1i.pdb.gz
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\bin\Debug\net9.0\wwwroot\_framework\ECommerceFEApp.w2w04y0ill.wasm.gz
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\zqeyuvgud8-w2w04y0ill.gz
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\4q6z8c2a70-tv08xkvv1i.gz
+C:\Users\2391440\OneDrive - Cognizant\Desktop\Work\Project\ECommerceFEApp\obj\Debug\net9.0\compressed\0ulxlfgdj5-inp47j4hhy.gz
