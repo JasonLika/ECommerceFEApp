@@ -2,6 +2,7 @@
 @using ECommerceFEApp.AuthServices
 @inject HttpClient Http
 @inject AuthService AuthService
+@using ECommerceFEApp.Models
 
 <h3>My Orders</h3>
 
@@ -37,12 +38,12 @@ else
 }
 
 @code {
-    private List<OrderDto>? orders;
+    private List<Order>? orders;
 
     protected override async Task OnInitializedAsync()
     {
         await AuthService.SetAuthHeaderAsync();
-        orders = await Http.GetFromJsonAsync<List<OrderDto>>("api/orders");
+        orders = await Http.GetFromJsonAsync<List<Order>>("api/orders");
     }
 
     public class OrderDto
