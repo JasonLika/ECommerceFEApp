@@ -17,5 +17,10 @@ public class OrderService
     await _httpClient.PostAsJsonAsync("api/orders", orderItem);
     }
 
+    public async Task<List<Order>> GetOrdersAsync()
+    {
+        return await _httpClient.GetFromJsonAsync<List<Order>>("api/orders");
+    }
+
 }
 }
