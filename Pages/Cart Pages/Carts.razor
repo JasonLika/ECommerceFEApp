@@ -14,6 +14,7 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th style="text-align: center;">Quantity</th>
+                <th>Total</th>
             </tr>
         </thead>
         <tbody>
@@ -38,6 +39,7 @@
                         <button class="btn btn-primary btn-sm" @onclick="() => UpdateCartItem(cart)">Update</button>
                     </div>
                 </td>
+                <td>@(cart.Quantity * cart.Price)</td>
                 <td style="vertical-align: middle;">
                     <button class="btn btn-danger btn-sm" @onclick="() => DeleteCartItem(cart.Id)">Delete</button>
                 </td>
