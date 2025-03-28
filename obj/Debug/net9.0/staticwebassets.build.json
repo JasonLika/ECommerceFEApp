@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KXGPAqFp7dApXxwUq8GAXiKaSWhv4bSChBUO2LxPPMM=",
+  "Hash": "IGKzNnZFgxWA/2/bpJC48S13BbBm+g3SvBIRCWsjtCw=",
   "Source": "ECommerceFEApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "6qfd5f4nhf",
-      "Integrity": "3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY=",
+      "Fingerprint": "lesvukuz9k",
+      "Integrity": "je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "urtuf821k4",
-      "Integrity": "xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=",
+      "Fingerprint": "zqd3htb4tn",
+      "Integrity": "paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\ECommerceFEApp.pdb"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "d5jd6c828p",
-      "Integrity": "z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=",
+      "Fingerprint": "3hs0l1hp0k",
+      "Integrity": "J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\webcil\\ECommerceFEApp.wasm"
@@ -4490,7 +4490,7 @@
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Serialization.Xml.wasm"
     },
     {
-      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-6qfd5f4nhf.gz",
+      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-lesvukuz9k.gz",
       "SourceId": "ECommerceFEApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\",
@@ -4504,8 +4504,8 @@
       "RelatedAsset": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mlenw7z3tb",
-      "Integrity": "VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA=",
+      "Fingerprint": "2dmw0to0hw",
+      "Integrity": "Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5162,12 +5162,12 @@
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.WebProxy.wasm"
     },
     {
-      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-urtuf821k4.gz",
+      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-zqd3htb4tn.gz",
       "SourceId": "ECommerceFEApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ECommerceFEApp#[.{fingerprint=urtuf821k4}]!.pdb.gz",
+      "RelativePath": "_framework/ECommerceFEApp#[.{fingerprint=zqd3htb4tn}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5176,8 +5176,8 @@
       "RelatedAsset": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e2h8rpdpql",
-      "Integrity": "ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=",
+      "Fingerprint": "qjo372yst9",
+      "Integrity": "Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.pdb"
@@ -9656,12 +9656,12 @@
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-d5jd6c828p.gz",
+      "Identity": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-3hs0l1hp0k.gz",
       "SourceId": "ECommerceFEApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ECommerceFEApp#[.{fingerprint=d5jd6c828p}]!.wasm.gz",
+      "RelativePath": "_framework/ECommerceFEApp#[.{fingerprint=3hs0l1hp0k}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9670,8 +9670,8 @@
       "RelatedAsset": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "87box8qebl",
-      "Integrity": "tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=",
+      "Fingerprint": "nub6j8xsbt",
+      "Integrity": "f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.wasm"
@@ -11158,7 +11158,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY=\""
+          "Value": "\"je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-lesvukuz9k.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000080808081"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12374"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw=\""
         },
         {
           "Name": "Last-Modified",
@@ -11167,45 +11206,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-6qfd5f4nhf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000080827675"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12371"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:21:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -11221,19 +11221,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY=\""
+          "Value": "W/\"je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY="
+          "Value": "sha256-je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-6qfd5f4nhf.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\0ulxlfgdj5-lesvukuz9k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11242,7 +11242,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12371"
+          "Value": "12374"
         },
         {
           "Name": "Content-Type",
@@ -11250,11 +11250,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA=\""
+          "Value": "\"Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:21:31 GMT"
+          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11272,7 +11272,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA="
+          "Value": "sha256-Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw="
         }
       ]
     },
@@ -13202,7 +13202,7 @@
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
       "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13212,7 +13212,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "133909"
+          "Value": "139029"
         },
         {
           "Name": "Content-Type",
@@ -13220,11 +13220,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13234,7 +13234,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "label",
@@ -13242,18 +13242,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-d5jd6c828p.gz",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-3hs0l1hp0k.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000021302884"
+          "Quality": "0.000020475020"
         }
       ],
       "ResponseHeaders": [
@@ -13263,15 +13263,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13291,13 +13291,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "W/\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "label",
@@ -13305,13 +13305,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-d5jd6c828p.gz",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-3hs0l1hp0k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13320,7 +13320,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -13328,11 +13328,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13350,7 +13350,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "label",
@@ -13358,7 +13358,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E="
+          "Value": "sha256-f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ="
         }
       ]
     },
@@ -13373,7 +13373,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87624"
+          "Value": "91508"
         },
         {
           "Name": "Content-Type",
@@ -13381,11 +13381,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
+          "Value": "\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13395,18 +13395,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.pdb",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-urtuf821k4.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-zqd3htb4tn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015258789"
+          "Quality": "0.000014615182"
         }
       ],
       "ResponseHeaders": [
@@ -13416,15 +13416,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "65535"
+          "Value": "68421"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13444,19 +13444,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
+          "Value": "W/\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.pdb.gz",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-urtuf821k4.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-zqd3htb4tn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13465,7 +13465,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "65535"
+          "Value": "68421"
         },
         {
           "Name": "Content-Type",
@@ -13473,11 +13473,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13495,168 +13495,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87624"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-urtuf821k4.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015258789"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "65535"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-urtuf821k4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "65535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo="
+          "Value": "sha256-Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8="
         }
       ]
     },
@@ -13671,7 +13510,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "133909"
+          "Value": "139029"
         },
         {
           "Name": "Content-Type",
@@ -13679,11 +13518,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13693,18 +13532,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.wasm",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-d5jd6c828p.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-3hs0l1hp0k.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000021302884"
+          "Quality": "0.000020475020"
         }
       ],
       "ResponseHeaders": [
@@ -13714,15 +13553,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13742,19 +13581,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "W/\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.wasm.gz",
-      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-d5jd6c828p.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\zqeyuvgud8-3hs0l1hp0k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13763,7 +13602,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -13771,11 +13610,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13793,7 +13632,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E="
+          "Value": "sha256-f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerceFEApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-zqd3htb4tn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000014615182"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68421"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
+      "AssetFile": "C:\\Users\\2391440\\OneDrive - Cognizant\\Desktop\\Work\\Project\\ECommerceFEApp\\obj\\Debug\\net9.0\\compressed\\4q6z8c2a70-zqd3htb4tn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8="
         }
       ]
     },

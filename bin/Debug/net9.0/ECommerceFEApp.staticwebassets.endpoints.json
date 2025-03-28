@@ -644,8 +644,8 @@
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -658,7 +658,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "133909"
+          "Value": "139029"
         },
         {
           "Name": "Content-Type",
@@ -666,21 +666,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         },
         {
           "Name": "label",
@@ -689,13 +689,13 @@
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000021302884"
+          "Quality": "0.000020475020"
         }
       ],
       "ResponseHeaders": [
@@ -713,7 +713,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -721,15 +721,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "W/\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -739,11 +739,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         },
         {
           "Name": "label",
@@ -752,8 +752,8 @@
       ]
     },
     {
-      "Route": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
+      "Route": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -770,7 +770,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -778,11 +778,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -792,11 +792,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5jd6c828p"
+          "Value": "3hs0l1hp0k"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E="
+          "Value": "sha256-f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ="
         },
         {
           "Name": "label",
@@ -806,7 +806,7 @@
     },
     {
       "Route": "_framework/ECommerceFEApp.pdb",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -819,7 +819,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87624"
+          "Value": "91508"
         },
         {
           "Name": "Content-Type",
@@ -827,28 +827,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
+          "Value": "\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.pdb",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015258789"
+          "Quality": "0.000014615182"
         }
       ],
       "ResponseHeaders": [
@@ -866,7 +866,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "65535"
+          "Value": "68421"
         },
         {
           "Name": "Content-Type",
@@ -874,15 +874,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
+          "Value": "W/\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -892,13 +892,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.pdb.gz",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -915,7 +915,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "65535"
+          "Value": "68421"
         },
         {
           "Name": "Content-Type",
@@ -923,11 +923,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -937,174 +937,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87624"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015258789"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "65535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xh6koUpaMcCcJq/H/1Ji7c4EQYR6npFlOEHq1QKiMg0="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
-      "AssetFile": "_framework/ECommerceFEApp.urtuf821k4.pdb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "65535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "urtuf821k4"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZhfqgS5Ar0Mjm/A4+toJsku9rfMc2GX7+fj/MYgP0Xo="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerceFEApp.pdb.gz"
+          "Value": "sha256-Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.wasm",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1117,7 +956,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "133909"
+          "Value": "139029"
         },
         {
           "Name": "Content-Type",
@@ -1125,28 +964,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:24 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.wasm",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000021302884"
+          "Quality": "0.000020475020"
         }
       ],
       "ResponseHeaders": [
@@ -1164,7 +1003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -1172,15 +1011,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I=\""
+          "Value": "W/\"J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -1190,13 +1029,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z+crYW1znyTOU3OE56+uag6jviM8a4AWwPJzPo+hM1I="
+          "Value": "sha256-J7mplzRIz1dSOZ6AlYjDz78Vj4Yvh/dpBB7yw9riI7A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerceFEApp.wasm.gz",
-      "AssetFile": "_framework/ECommerceFEApp.d5jd6c828p.wasm.gz",
+      "AssetFile": "_framework/ECommerceFEApp.3hs0l1hp0k.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1213,7 +1052,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "46941"
+          "Value": "48839"
         },
         {
           "Name": "Content-Type",
@@ -1221,11 +1060,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E=\""
+          "Value": "\"f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
         },
         {
           "Name": "Vary",
@@ -1235,7 +1074,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tE+SWD+A/4gENvHVcwBam84u+sxnz85NnCKq5cm5V/E="
+          "Value": "sha256-f6TPZgOt7EcLzndYNTA7CpGPrD2GoMNeNA1jIhvOcEQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000014615182"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-paJNWQt8DluRkLF4YBTdYHGma1X9wgX6P2i+Vnh+/QI="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
+      "AssetFile": "_framework/ECommerceFEApp.zqd3htb4tn.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 14:13:41 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqd3htb4tn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bm7bUznl7LstXbmzQNh0mg5NzYw2eFvcsnCLMP2HrH8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerceFEApp.pdb.gz"
         }
       ]
     },
@@ -57882,17 +57882,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY=\""
+          "Value": "\"je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
+          "Value": "Fri, 28 Mar 2025 14:13:40 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY="
+          "Value": "sha256-je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o="
         }
       ]
     },
@@ -57903,7 +57903,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080827675"
+          "Quality": "0.000080808081"
         }
       ],
       "ResponseHeaders": [
@@ -57921,7 +57921,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12371"
+          "Value": "12374"
         },
         {
           "Name": "Content-Type",
@@ -57929,15 +57929,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA=\""
+          "Value": "\"Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY=\""
+          "Value": "W/\"je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:21:31 GMT"
+          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
         },
         {
           "Name": "Vary",
@@ -57947,7 +57947,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3lFKIn0hos9GNzBE9Yc8FIpraqy/h+FRJ8iDiyQZkSY="
+          "Value": "sha256-je8bn31lN5Q3D9+A+nP7Dw6z3rql0biMYT+wcCMXa7o="
         }
       ]
     },
@@ -57970,7 +57970,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12371"
+          "Value": "12374"
         },
         {
           "Name": "Content-Type",
@@ -57978,11 +57978,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA=\""
+          "Value": "\"Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:21:31 GMT"
+          "Value": "Thu, 27 Mar 2025 20:45:27 GMT"
         },
         {
           "Name": "Vary",
@@ -57992,7 +57992,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VsqNgGCAaQrT9Y5I6FzXMrWVdvCNq7C8MzDxUFEwEJA="
+          "Value": "sha256-Nk32iSRBUYQIox7dK8CPNWah3ofSUOWAvsBaSxhljYw="
         }
       ]
     },
