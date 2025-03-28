@@ -88,7 +88,15 @@ else
         await AuthService.SetAuthHeaderAsync();
 
         // Load the user's cart
-        cartItems = await Http.GetFromJsonAsync<List<Cart>>("api/carts");
+        //cartItems = await Http.GetFromJsonAsync<List<Cart>>("api/carts");
+
+        //
+        var allCarts = await CartService.GetCartsAsync();
+        user = await CartService.GetCurrentUserProfileAsync();
+        var userId = user.Id;
+        cartItems = allCarts.Where(cart => cart.UserId == userId).ToList();
+        //
+
         if (cartItems != null && cartItems.Count > 0)
         {
             grandTotal = cartItems.Sum(ci => ci.Quantity * ci.Price);
@@ -113,14 +121,6 @@ else
             // Retrieve the OrderId from the response
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
         }
-    }
-
-    // Minimal models
-    public class CartItemDto
-    {
-        public int ProductId { get; set; }
-        public int Quantity { get; set; }
-        public decimal UnitPrice { get; set; }
     }
 
     public class PaymentRequest
