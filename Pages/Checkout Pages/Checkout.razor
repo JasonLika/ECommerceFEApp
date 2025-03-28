@@ -96,7 +96,8 @@ else
     private async Task CreatePayPalOrder()
     {
         // calls e.g. /api/paypal/create-order
-        var response = await PayPalService.CreatePayPalOrderAsync();
+        //var response = await PayPalService.CreatePayPalOrderAsync();
+        var response = await Http.PostAsync("api/paypal/create-order", null);
         if (response.IsSuccessStatusCode)
         {
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
