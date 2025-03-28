@@ -34,8 +34,8 @@ else
                 <tr>
                     <td>@item.ProductId</td>
                     <td>@item.Quantity</td>
-                    <td>@item.UnitPrice</td>
-                    <td>@(item.Quantity * item.UnitPrice)</td>
+                    <td>@item.Price</td>
+                    <td>@(item.Quantity * item.Price)</td>
                 </tr>
             }
         </tbody>
@@ -75,7 +75,7 @@ else
 }
 
 @code {
-    private List<CartItemDto>? cartItems;
+    private List<Cart>? cartItems;
     private decimal grandTotal;
     private int paypalOrderId;
 
@@ -85,10 +85,10 @@ else
         await AuthService.SetAuthHeaderAsync();
 
         // Load the user's cart
-        cartItems = await Http.GetFromJsonAsync<List<CartItemDto>>("api/carts");
+        cartItems = await Http.GetFromJsonAsync<List<Cart>>("api/carts");
         if (cartItems != null && cartItems.Count > 0)
         {
-            grandTotal = cartItems.Sum(ci => ci.Quantity * ci.UnitPrice);
+            grandTotal = cartItems.Sum(ci => ci.Quantity * ci.Price);
         }
     }
 
