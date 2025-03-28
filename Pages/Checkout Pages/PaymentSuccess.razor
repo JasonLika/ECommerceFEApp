@@ -3,6 +3,7 @@
 @inject HttpClient Http
 @inject AuthService AuthService
 @inject NavigationManager NavManager
+@inject NavigationManager Navigation;
 
 <h3>Payment Success!</h3>
 
@@ -17,6 +18,8 @@ else
     {
         <div class="alert alert-success">@statusMessage</div>
     }
+
+    <button class="btn btn-danger btn-sm" @onclick="() => NavigateToOrders()">Go To Orders</button>
 }
 
 @code {
@@ -68,4 +71,8 @@ else
 
     }
 
+    private void NavigateToOrders()
+    {
+        NavManager.NavigateTo("/orders", forceLoad: true);    
+    }
 }
