@@ -6,6 +6,7 @@
 @inject NavigationManager NavManager
 @using ECommerceFEApp.Models
 @inject PayPalService PayPalService
+@inject CartService CartService
 
 <h3>Checkout</h3>
 
@@ -78,6 +79,7 @@ else
     private List<Cart>? cartItems;
     private decimal grandTotal;
     private int paypalOrderId;
+    private UserProfile user;
 
     protected override async Task OnInitializedAsync()
     {
@@ -95,9 +97,11 @@ else
     // 2) PayPal - create an order on the server, then show the sandbox form
     private async Task CreatePayPalOrder()
     {
+        user = await CartService.GetCurrentUserProfileAsync();
+        var userId = user.Id;
         // calls e.g. /api/paypal/create-order
         //var response = await PayPalService.CreatePayPalOrderAsync();
-        var response = await Http.PostAsync("api/paypal/create-order", null);
+        var response = await Http.PostAsync("api/paypal/create-order?userId={userId}", null);
         if (response.IsSuccessStatusCode)
         {
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
