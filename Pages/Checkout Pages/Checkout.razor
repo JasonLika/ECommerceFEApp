@@ -7,6 +7,7 @@
 @using ECommerceFEApp.Models
 @inject PayPalService PayPalService
 @inject CartService CartService
+@inject OrderService OrderService
 
 <h3>Checkout</h3>
 
@@ -97,13 +98,30 @@ else
     // 2) PayPal - create an order on the server, then show the sandbox form
     private async Task CreatePayPalOrder()
     {
-        user = await CartService.GetCurrentUserProfileAsync();
-        var userId = user.Id;
+        //user = await CartService.GetCurrentUserProfileAsync();
+        //var userId = user.Id;
+
         // calls e.g. /api/paypal/create-order
-        //var response = await PayPalService.CreatePayPalOrderAsync();
-        var response = await Http.PostAsync("api/paypal/create-order?userId={userId}", null);
+        var orderItem = new Order
+        {
+            UserId = user.Id,
+            CreatedAt = DateTime.UtcNow,
+            Status = "Awaiting Payment"
+        };
+
+        //await OrderService.AddToOrderAsync(orderItem);
+
+        /*
+        var response = await Http.PostAsync("api/paypal/create-order", null);
         if (response.IsSuccessStatusCode)
         {
+            paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
+        }
+        */
+        var response = await Http.PostAsJsonAsync("api/orders", orderItem); // Assuming "api/orders" matches the backend endpoint
+        if (response.IsSuccessStatusCode)
+        {
+            // Retrieve the OrderId from the response
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
         }
     }
