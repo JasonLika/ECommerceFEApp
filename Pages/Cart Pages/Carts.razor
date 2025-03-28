@@ -47,6 +47,7 @@
             }
         </tbody>
     </table>
+    <button class="btn btn-danger btn-sm" @onclick="() => NavigateToCheckout()">Go To Checkout</button>
 </div>
 
 
@@ -86,4 +87,8 @@
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
     }
 
+    private void NavigateToCheckout()
+    {
+        Navigation.NavigateTo($"/checkout");
+    }
 }
