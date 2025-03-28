@@ -99,9 +99,7 @@ else
     private async Task CreatePayPalOrder()
     {
         user = await CartService.GetCurrentUserProfileAsync();
-        //var userId = user.Id;
 
-        // calls e.g. /api/paypal/create-order
         var orderItem = new Order
         {
             UserId = user.Id,
@@ -109,16 +107,7 @@ else
             Status = "Awaiting Payment"
         };
 
-        //await OrderService.AddToOrderAsync(orderItem);
-
-        /*
-        var response = await Http.PostAsync("api/paypal/create-order", null);
-        if (response.IsSuccessStatusCode)
-        {
-            paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
-        }
-        */
-        var response = await Http.PostAsJsonAsync("api/orders", orderItem); // Assuming "api/orders" matches the backend endpoint
+        var response = await Http.PostAsJsonAsync("api/orders", orderItem);
         if (response.IsSuccessStatusCode)
         {
             // Retrieve the OrderId from the response
