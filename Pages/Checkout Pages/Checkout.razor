@@ -98,7 +98,7 @@ else
     // 2) PayPal - create an order on the server, then show the sandbox form
     private async Task CreatePayPalOrder()
     {
-        //user = await CartService.GetCurrentUserProfileAsync();
+        user = await CartService.GetCurrentUserProfileAsync();
         //var userId = user.Id;
 
         // calls e.g. /api/paypal/create-order
