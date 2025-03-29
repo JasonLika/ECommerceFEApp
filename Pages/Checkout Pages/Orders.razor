@@ -6,6 +6,7 @@
 @using ECommerceFEApp.Services
 @inject OrderService OrderService
 @inject CartService CartService
+@inject HttpClient Http
 
 <h3>My Orders</h3>
 
@@ -44,6 +45,7 @@ else
     private List<Order>? orders;
     private UserProfile user;
 
+    UserProfileModel profile = new UserProfileModel();
 
     protected override async Task OnInitializedAsync()
     {
@@ -51,8 +53,29 @@ else
         //orders = await Http.GetFromJsonAsync<List<Order>>("api/orders");
 
         var allOrders = await OrderService.GetOrdersAsync();
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+        var userId = profile.Id;
+        orders = allOrders.Where(order => order.UserId == userId).ToList();
+
+        /*
+        var allOrders = await OrderService.GetOrdersAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
         orders = allOrders.Where(order => order.UserId == userId).ToList();
+        */
+    }
+
+       public class UserProfileModel
+    {
+        public int Id { get; set; }
+        public string GitHubId { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string Role { get; set; } = string.Empty;
     }
 }

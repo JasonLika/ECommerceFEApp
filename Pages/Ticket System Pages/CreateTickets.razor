@@ -4,6 +4,10 @@
 @inject TicketService TicketService;
 @inject CartService CartService;
 @inject NavigationManager Navigation;
+@inject HttpClient Http
+@using ECommerceFEApp.AuthServices;
+@inject AuthService AuthService;
+
 
 <EditForm Model="newTicket" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator />
@@ -24,11 +28,19 @@
 {
     private Ticket newTicket = new();
     private UserProfile user;
+    UserProfileModel profile = new UserProfileModel();
+
 
     protected override async Task OnInitializedAsync()
     {
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+        var userId = profile.Id;
+
+        /*
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
+        */
     }
 
 
@@ -40,5 +52,18 @@
         // Wait for 5 seconds (5000 milliseconds)
         await Task.Delay(5000);
         Navigation.NavigateTo("/tickets");
+    }
+
+    public class UserProfileModel
+    {
+        public int Id { get; set; }
+        public string GitHubId { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string Role { get; set; } = string.Empty;
     }
 }

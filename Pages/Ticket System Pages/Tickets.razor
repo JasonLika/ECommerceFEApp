@@ -4,6 +4,9 @@
 @inject TicketService TicketService
 @inject CartService CartService;
 @inject NavigationManager Navigation;
+@using ECommerceFEApp.AuthServices;
+@inject AuthService AuthService;
+@inject HttpClient Http
 
 <h3>Tickets</h3>
  
@@ -33,6 +36,7 @@
 @code {
     private List<Ticket> TicketList = new();
     private UserProfile user;
+    UserProfileModel profile = new UserProfileModel();
 
  
     protected override async Task OnInitializedAsync()
@@ -40,9 +44,17 @@
         //TicketList = await TicketService.GetTicketsAsync();
 
         var allTickets = await TicketService.GetTicketsAsync();
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+        var userId = profile.Id;
+        TicketList = allTickets.Where(ticket => ticket.UserId == userId).ToList();
+
+        /*
+        var allTickets = await TicketService.GetTicketsAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
         TicketList = allTickets.Where(ticket => ticket.UserId == userId).ToList();
+        */
     }
 
     private void NavigateToCreateTicket() {
@@ -59,4 +71,17 @@
         ProductList = await ProductService.GetProductsAsync();
     }
     */
+
+        public class UserProfileModel
+    {
+        public int Id { get; set; }
+        public string GitHubId { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string Role { get; set; } = string.Empty;
+    }
 }
