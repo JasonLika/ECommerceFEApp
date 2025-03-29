@@ -47,7 +47,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        //await AuthService.SetAuthHeaderAsync();
+        await AuthService.SetAuthHeaderAsync();
         //orders = await Http.GetFromJsonAsync<List<Order>>("api/orders");
 
         var allOrders = await OrderService.GetOrdersAsync();

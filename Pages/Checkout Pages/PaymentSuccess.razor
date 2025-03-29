@@ -58,6 +58,8 @@ else
     var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
     var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
 
+    await AuthService.SetAuthHeaderAsync();
+
     // Parse "orderId" safely
     if (int.TryParse(query["orderId"], out var parsedOrderId))
     {
