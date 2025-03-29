@@ -94,7 +94,8 @@ else
     if (response.IsSuccessStatusCode)
     {
         // Update the UI to reflect the empty cart
-        CartList = new List<Cart>(); // Empty cart items
+        CartList = new List<Cart>();
+        StateHasChanged();
     }
 
 }
