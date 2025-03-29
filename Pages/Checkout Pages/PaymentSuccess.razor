@@ -85,9 +85,17 @@ else
     var userId = profile.Id;
     CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
     
-    //
+    /*
     CartList = new List<Cart>();
     StateHasChanged();
+    */
+
+    var response = await Http.DeleteAsync("api/carts/clear");
+    if (response.IsSuccessStatusCode)
+    {
+        // Update the UI to reflect the empty cart
+        CartList = new List<Cart>(); // Empty cart items
+    }
 
 }
 
