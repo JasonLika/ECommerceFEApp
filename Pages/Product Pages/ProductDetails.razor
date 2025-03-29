@@ -1,10 +1,13 @@
 @page "/product-details/{id:int}"
 @using ECommerceFEApp.Services; 
+@using ECommerceFEApp.AuthServices; 
 @using ECommerceFEApp.Models;
 @inject ProductService ProductService
 @inject CartService CartService
 @inject WishlistService WishlistService
+@inject AuthService AuthService
 @inject NavigationManager Navigation;
+@inject HttpClient Http
 
 @if (product == null) {
     <p>Loading...</p>
@@ -79,12 +82,17 @@ else {
     [Parameter] public int Id {get; set;}
 
     private UserProfile user;
+    UserProfileModel profile = new UserProfileModel();
+
 
     protected override async Task OnInitializedAsync() {
         
         product = await ProductService.GetProductByIdAsync(Id);
 
-        user = await CartService.GetCurrentUserProfileAsync();
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+
+        //user = await CartService.GetCurrentUserProfileAsync();
     }
 
     private void GoToCreateReview() {
@@ -163,4 +171,17 @@ else {
     Navigation.NavigateTo("/carts");    
     }
 */
+
+    public class UserProfileModel
+    {
+        public int Id { get; set; }
+        public string GitHubId { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string Role { get; set; } = string.Empty;
+    }
 }
