@@ -145,14 +145,13 @@ else
             // Retrieve the OrderId from the response
             paypalOrderId = await response.Content.ReadFromJsonAsync<int>();
 
-            // Clear the cartItems list
+            /*
             cartItems = new List<Cart>();
 
             // Reset the grand total to 0
             grandTotal = 0;
-
-            // Optionally refresh the UI to reflect the changes
             StateHasChanged();
+            */
         }
     }
 

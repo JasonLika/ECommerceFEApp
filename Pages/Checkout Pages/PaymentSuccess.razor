@@ -4,6 +4,8 @@
 @inject AuthService AuthService
 @inject NavigationManager NavManager
 @inject NavigationManager Navigation;
+@using ECommerceFEApp.Services
+@inject CartService CartService
 
 <h3>Payment Success!</h3>
 
@@ -26,6 +28,8 @@ else
     private int orderId;
     private string method = "";
     private string statusMessage = "";
+    UserProfileModel profile = new UserProfileModel();
+
 
     /*
     protected override async Task OnInitializedAsync()
@@ -71,10 +75,31 @@ else
         statusMessage = $"Order {orderId} was successfully processed. Thank you for your payment!";
     }
 
+    /*
+    var allCarts = await CartService.GetCartsAsync();
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+        var userId = profile.Id;
+        CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
+    */
+
     }
 
     private void NavigateToOrders()
     {
         NavManager.NavigateTo("/orders", forceLoad: true);    
+    }
+
+        public class UserProfileModel
+    {
+        public int Id { get; set; }
+        public string GitHubId { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string Role { get; set; } = string.Empty;
     }
 }
