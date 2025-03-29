@@ -3,6 +3,7 @@
 @using ECommerceFEApp.AuthServices;
 @inject HttpClient Http;
 @inject AuthService AuthService;
+@inject NavigationManager Navigation;
 
 <h3>User Role Management</h3>
 
@@ -47,6 +48,9 @@ else
             @confirmationMessage
         </div>
     }
+    <td>
+        <button class="btn btn-primary" @onclick="() => NavigateToCreateProduct()">Go To Product Create</button>
+    </td>
 }
 
 @code {
@@ -76,5 +80,9 @@ else
         public string? Username { get; set; }
         public string? Role { get; set; }
         public string? NewRole { get; set; } 
+    }
+
+    private void NavigateToCreateProduct() {
+        Navigation.NavigateTo($"/admin/createproducts");
     }
 }
