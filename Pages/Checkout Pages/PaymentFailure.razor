@@ -1,0 +1,30 @@
+@page "/payment-cancel"
+@using ECommerceFEApp.AuthServices
+@inject HttpClient Http
+@inject AuthService AuthService
+@inject NavigationManager NavManager
+
+<h3 class="text-danger">Payment Failure</h3>
+
+<div class="alert alert-danger mt-4">
+    <h5>We're sorry, your payment could not be completed.</h5>
+    <p>You will be redirected to the checkout page in <strong>@countdown</strong> seconds...</p>
+</div>
+
+@code {
+    private int countdown = 4;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Countdown timer
+        while (countdown > 0)
+        {
+            await Task.Delay(1000);
+            countdown--;
+            StateHasChanged();
+        }
+
+        // Redirect to the checkout page after 4 seconds
+        NavManager.NavigateTo("/checkout");
+    }
+}
