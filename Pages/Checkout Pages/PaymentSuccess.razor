@@ -5,6 +5,7 @@
 @inject NavigationManager NavManager
 @inject NavigationManager Navigation;
 @using ECommerceFEApp.Services
+@using ECommerceFEApp.Models
 @inject CartService CartService
 
 <h3>Payment Success!</h3>
@@ -29,6 +30,8 @@ else
     private string method = "";
     private string statusMessage = "";
     UserProfileModel profile = new UserProfileModel();
+    private List<Cart> CartList = new();
+
 
 
     /*
@@ -75,15 +78,18 @@ else
         statusMessage = $"Order {orderId} was successfully processed. Thank you for your payment!";
     }
 
-    /*
+    
     var allCarts = await CartService.GetCartsAsync();
-        await AuthService.SetAuthHeaderAsync();
-        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
-        var userId = profile.Id;
-        CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
-    */
+    await AuthService.SetAuthHeaderAsync();
+    profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+    var userId = profile.Id;
+    CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
+    
+    //
+    CartList = new List<Cart>();
+    StateHasChanged();
 
-    }
+}
 
     private void NavigateToOrders()
     {
