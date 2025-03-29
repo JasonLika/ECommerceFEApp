@@ -114,7 +114,7 @@ else {
             Stock = product.Stock,
             Size = product.Size,
             ImageUrl = product.ImageUrl,
-            UserId = user.Id
+            UserId = profile.Id
         };
 
         await CartService.AddToCartAsync(cartItem);
@@ -131,7 +131,7 @@ else {
             Stock = product.Stock,
             Size = product.Size,
             ImageUrl = product.ImageUrl,
-            UserId = user.Id
+            UserId = profile.Id
         };
 
         await WishlistService.AddToWishlistAsync(wishlistItem);

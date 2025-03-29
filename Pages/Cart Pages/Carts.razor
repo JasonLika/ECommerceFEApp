@@ -65,18 +65,18 @@
     {
         //CartList = await CartService.GetCartsAsync();
 
-        /*
         var allCarts = await CartService.GetCartsAsync();
         await AuthService.SetAuthHeaderAsync();
         profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
         var userId = profile.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
-        */
 
+        /*
         var allCarts = await CartService.GetCartsAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
+        */
         
     }
 
@@ -84,18 +84,18 @@
         await CartService.DeleteCartItemAsync(id);
         //CartList = await CartService.GetCartsAsync();
 
-        /*
         var allCarts = await CartService.GetCartsAsync();
         await AuthService.SetAuthHeaderAsync();
         profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
         var userId = profile.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
-        */
 
+        /*
         var allCarts = await CartService.GetCartsAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
+        */
     }
 
     private async Task UpdateCartItem(Cart cart)
@@ -103,18 +103,18 @@
         await CartService.UpdateCartItemAsync(cart);
         //CartList = await CartService.GetCartsAsync();
 
-        /*
         var allCarts = await CartService.GetCartsAsync();
         await AuthService.SetAuthHeaderAsync();
         profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
         var userId = profile.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
-        */
         
+        /*
         var allCarts = await CartService.GetCartsAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
         CartList = allCarts.Where(cart => cart.UserId == userId).ToList();
+        */
         
     }
 

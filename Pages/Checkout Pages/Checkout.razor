@@ -112,9 +112,9 @@ else
         var allCarts = await CartService.GetCartsAsync();
         user = await CartService.GetCurrentUserProfileAsync();
         var userId = user.Id;
-        cartItems = allCarts.Where(cart => cart.UserId == userId).ToList();
-        */
-        
+        cartItems = allCarts.Where(cart => cart.UserId == userId).ToList();      
+        */  
+
 
         if (cartItems != null && cartItems.Count > 0)
         {
@@ -125,11 +125,16 @@ else
     // 2) PayPal - create an order on the server, then show the sandbox form
     private async Task CreatePayPalOrder()
     {
+        /*
         user = await CartService.GetCurrentUserProfileAsync();
+        */
+        await AuthService.SetAuthHeaderAsync();
+        profile = await Http.GetFromJsonAsync<UserProfileModel>("api/userprofiles/me") ?? new UserProfileModel();
+        var userId = profile.Id;
 
         var orderItem = new Order
         {
-            UserId = user.Id,
+            UserId = userId,
             CreatedAt = DateTime.UtcNow,
             Status = "Awaiting Payment"
         };

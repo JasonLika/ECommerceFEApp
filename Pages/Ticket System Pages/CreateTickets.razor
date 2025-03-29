@@ -46,7 +46,7 @@
 
     private async Task HandleValidSubmit()
     {
-        newTicket.UserId = user.Id;
+        newTicket.UserId = profile.Id;
         await TicketService.CreateTicketAsync(newTicket);
         Navigation.NavigateTo("/ticketsuccess");
         // Wait for 5 seconds (5000 milliseconds)
